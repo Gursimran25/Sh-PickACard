@@ -47,7 +47,17 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
-   
+    public int ranSuit()
+    {
+       int value = (int) (Math.random()*4)+0;
+       return value;
+    }        
+    public int ranValue()
+    {
+        int value = (int) (Math.random()*13)+1;
+        return value;
+        
+    }        
    
     
 }
